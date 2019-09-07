@@ -67,7 +67,7 @@ public class ConsultarView implements Serializable {
 	
 	public void consultar() {
 		try {
-			if(minimo>maximo) {
+			if(minimo>maximo && maximo!=0) {
 				throw new ZMessManager("El valor minimo no puede ser mayor al maximo");
 			}
 			
