@@ -156,7 +156,7 @@ public class RegistroCalculoServiceImpl implements RegistroCalculoService {
             
             registraCalculo.setFechaEjecucion(new Date());
             registraCalculo.setUsuarios(usuario.get(0));
-            registraCalculo.setResultado(calculo.valor(1, entity.getLimite()));
+            registraCalculo.setResultado(calculo.valor(2, entity.getLimite()));
             
             registroCalculoRepository.save(registraCalculo);
            
